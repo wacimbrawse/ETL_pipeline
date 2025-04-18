@@ -10,26 +10,36 @@ Le pipeline s'articule autour de trois grandes classes responsables du **nettoya
 
 ---
 
+
+
 ## 📁 Structure du Projet
 
 ```
-ETL_Project/
+ONLINE_RETAIL_FINAL/
 │
-├── data/                      # Contient les fichiers source (transactions, fournisseurs, mapping continent)
+├── Class_test/                         # Contient les fichiers de tests unitaires
+│   ├── DataCleanerTest.py              # Test pour la classe DataCleaner
+│   └── TransactionProcessorTest.py     # Test pour la classe TransactionProcessor
 │
-├── src/
-│   ├── data_cleaner.py        # Classe DataCleaner
-│   ├── transaction_processor.py  # Classe TransactionProcessor
-│   ├── etl_pipeline.py        # Classe ETLPipeline
+├── source/                             # Contient les sources et données du projet
+│   ├── Dictionnaire_map.py             # Dictionnaire de correspondance (continent, pays, etc.)
+│   ├── Online Retail.xlsx              # Données brutes des transactions
+│   ├── Supplier.csv                    # Données fournisseurs
+│   └── __init__.py
 │
-├── tests/
-│   ├── data_cleaner_test.py   # Tests unitaires pour DataCleaner
-│   ├── transaction_processor_test.py # Tests unitaires pour TransactionProcessor
+├── venv/                               # Environnement virtuel Python
+│   ├── Include/
+│   ├── Lib/
+│   ├── Scripts/
+│  
 │
-├── output/                    # Contiendra les fichiers générés (.parquet)
-│
-├── README.md
-└── requirements.txt
+├── Class_DataCleaner.py                # Classe principale pour le nettoyage des données
+├── Class_ETLPipeline.py                # Classe qui orchestre le processus ETL
+├── Class_TransactionProcessor.py       # Classe pour le traitement des transactions
+├── ProjetPython_Online_Retail.ipynb    # Notebook pour présentation ou test interactif
+├── README.md                           # Documentation du projet
+└── requirements.txt                    # Dépendances du projet
+
 ```
 
 ---
