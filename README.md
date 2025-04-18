@@ -125,4 +125,4 @@ Jeu de données :
 
 ## 👨‍💻 Auteur
 
-Développé par [TonNom](https://github.com/TonNom) dans le cadre d’un projet de data engineering orienté objet.
+Développé par [Wacim BRIANE](https://github.com/wacimbrawse) dans le cadre d’un projet de data engineering orienté objet.
